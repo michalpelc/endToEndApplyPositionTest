@@ -56,7 +56,6 @@ public class JobPage extends FluentPage {
 
     public String getMissingResumeError() {
         await().until(missingResumeError).displayed();
-        String text = missingResumeError.text();
-        return text;
+        return missingResumeError.text();
     }
 }
